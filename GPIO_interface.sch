@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6244,20 +6244,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="2,54/1,0">
+<package name="1,6/0,9">
 <description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="0.762" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-0.762" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-1.27" x2="1.27" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="-0.762" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
-<text x="-1.27" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
+<wire x1="-0.508" y1="0.762" x2="-0.762" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.508" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="-0.762" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.508" x2="0.762" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -6270,15 +6270,15 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="2,54/1,0" prefix="PAD" uservalue="yes">
+<deviceset name="1,6/0,9" prefix="PAD" uservalue="yes">
 <description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
 <gates>
-<gate name="P" symbol="PAD" x="0" y="0"/>
+<gate name="1" symbol="PAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="2,54/1,0">
+<device name="" package="1,6/0,9">
 <connects>
-<connect gate="P" pin="P" pad="1"/>
+<connect gate="1" pin="P" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6340,7 +6340,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SV4" library="con-lstb" deviceset="MA04-2" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
-<part name="VCC" library="wirepad" deviceset="2,54/1,0" device="" value="3.3V"/>
+<part name="VCC" library="wirepad" deviceset="1,6/0,9" device="" value="3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -6385,7 +6385,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SV4" gate="G$1" x="116.84" y="20.32"/>
 <instance part="SUPPLY6" gate="G$1" x="104.14" y="15.24" rot="R90"/>
 <instance part="SUPPLY7" gate="GND" x="132.08" y="15.24" rot="R90"/>
-<instance part="VCC" gate="P" x="73.66" y="27.94"/>
+<instance part="VCC" gate="1" x="73.66" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -6704,9 +6704,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="55.88" y1="-5.08" x2="55.88" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="-12.7" x2="55.88" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="81.28" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="40.64" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
 <junction x="55.88" y="-12.7"/>
 <junction x="55.88" y="-5.08"/>
@@ -6730,13 +6729,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SV2" gate="1" pin="14"/>
 <pinref part="SV2" gate="1" pin="18"/>
 <pinref part="SV2" gate="1" pin="23"/>
-<pinref part="SV2" gate="1" pin="9"/>
-<wire x1="88.9" y1="45.72" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
-<junction x="106.68" y="43.18"/>
-<pinref part="SV2" gate="1" pin="4"/>
-<wire x1="81.28" y1="60.96" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
-<junction x="81.28" y="63.5"/>
 </segment>
 <segment>
 <pinref part="SV3" gate="G$1" pin="1"/>
@@ -6760,10 +6752,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 <pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="30.48" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="VCC" gate="P" pin="P"/>
 <wire x1="81.28" y1="27.94" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
 <junction x="81.28" y="27.94"/>
+<pinref part="VCC" gate="1" pin="P"/>
 </segment>
 <segment>
 <pinref part="SV4" gate="G$1" pin="2"/>
