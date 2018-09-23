@@ -20,7 +20,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -1702,39 +1702,39 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 </autorouter>
 <elements>
 <element name="R1" library="rcl" package="R0603" value="270" x="20.45" y="10.7" smashed="yes">
-<attribute name="NAME" x="20.465" y="11.335" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="19.165" y="11.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="19.815" y="8.795" size="1.27" layer="27"/>
 </element>
 <element name="R2" library="rcl" package="R0603" value="270" x="17.35" y="10.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.085" y="12.115" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="18.935" y="12.315" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="17.985" y="12.605" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R3" library="rcl" package="R0603" value="270" x="14.25" y="10.7" smashed="yes">
-<attribute name="NAME" x="13.615" y="11.335" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="12.815" y="11.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="13.615" y="8.795" size="1.27" layer="27"/>
 </element>
 <element name="R4" library="rcl" package="R0603" value="270" x="11.15" y="10.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="11.985" y="12.115" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="12.785" y="12.365" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="11.785" y="12.605" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R5" library="rcl" package="R0603" value="270" x="8" y="10.7" smashed="yes">
-<attribute name="NAME" x="7.065" y="11.335" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="6.515" y="11.535" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="7.365" y="8.795" size="1.27" layer="27"/>
 </element>
 <element name="R6" library="rcl" package="R0603" value="270" x="8" y="10.7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="7.365" y="12.265" size="0.8128" layer="26" font="vector" rot="MR180"/>
+<attribute name="NAME" x="6.315" y="12.315" size="0.8128" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="7.365" y="12.605" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="R7" library="rcl" package="R0603" value="270" x="11.15" y="10.7" smashed="yes" rot="MR0">
-<attribute name="NAME" x="12.035" y="11.435" size="0.8128" layer="26" font="vector" rot="MR0"/>
+<attribute name="NAME" x="12.485" y="11.435" size="0.8128" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="11.785" y="8.795" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R8" library="rcl" package="R0603" value="270" x="14.25" y="10.7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="13.665" y="12.215" size="0.8128" layer="26" font="vector" rot="MR180"/>
+<attribute name="NAME" x="12.665" y="12.265" size="0.8128" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="13.615" y="12.605" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="R9" library="rcl" package="R0603" value="270" x="17.35" y="10.7" smashed="yes" rot="MR0">
-<attribute name="NAME" x="18.135" y="11.335" size="0.8128" layer="26" font="vector" rot="MR0"/>
+<attribute name="NAME" x="18.685" y="11.435" size="0.8128" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="17.985" y="8.795" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="C1" library="rcl" package="C0603" value="1n" x="20.45" y="6.6" smashed="yes" rot="R180">
@@ -1809,48 +1809,86 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <attribute name="NAME" x="16.315" y="10.065" size="0.8128" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="16.715" y="10.555" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="SV1" library="con-lstb" package="MA05-1" value="" x="13.85" y="17.9" smashed="yes" rot="R180">
+<element name="X4" library="con-lstb" package="MA05-1" value="" x="13.85" y="17.9" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="13.85" y="17.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="13.85" y="17.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="13.85" y="17.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="13.85" y="17.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="20.2" y="16.249" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="NAME" x="21.85" y="18.299" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="16.39" y="20.821" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="SV3" library="con-lstb" package="MA05-1" value="" x="13.9" y="21.35" smashed="yes">
+<element name="X3" library="con-lstb" package="MA05-1" value="" x="13.9" y="21.35" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="13.9" y="21.35" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="13.9" y="21.35" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="13.9" y="21.35" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="13.9" y="21.35" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3.95" y="20.751" size="1.016" layer="25" font="vector" ratio="10"/>
+<attribute name="NAME" x="20.55" y="20.751" size="0.8128" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="11.36" y="18.429" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SV4" library="con-lstb" package="MA04-2" value="" x="37.85" y="16.2" smashed="yes" rot="R270">
+<element name="X2" library="con-lstb" package="MA04-2" value="" x="37.85" y="16.2" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="37.85" y="16.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="37.85" y="16.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="37.85" y="16.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="37.85" y="16.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="40.821" y="20.73" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="33.921" y="15.83" size="0.8128" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="33.659" y="16.2" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="SV2" library="con-lstb" package="MA20-2" value="" x="32" y="2.95" rot="R180">
+<element name="X1" library="con-lstb" package="MA20-2" value="" x="32" y="2.95" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="32" y="2.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="32" y="2.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="32" y="2.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="32" y="2.95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="59.7" y="1.779" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="19.3" y="7.141" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="IC1" library="v-reg" package="DPACK" value="LD117ADT33TR" x="53.65" y="16.95"/>
-<element name="C19" library="rcl" package="C/6032-28R" value="22u" x="47.2" y="15.25" rot="R90"/>
-<element name="C20" library="rcl" package="C/6032-28R" value="10u" x="53.65" y="8.15"/>
-<element name="R10" library="rcl" package="R0603" value="270" x="20.95" y="13.25" rot="R270"/>
-<element name="R11" library="rcl" package="R0603" value="270" x="16.85" y="13.25" rot="R270"/>
-<element name="R12" library="rcl" package="R0603" value="270" x="14.75" y="13.25" rot="R270"/>
-<element name="R13" library="rcl" package="R0603" value="270" x="10.65" y="13.25" rot="R270"/>
-<element name="R14" library="rcl" package="R0603" value="270" x="8.5" y="13.25" rot="R270"/>
-<element name="R15" library="rcl" package="R0603" value="270" x="8.5" y="13.25" rot="MR270"/>
-<element name="R16" library="rcl" package="R0603" value="270" x="10.65" y="13.25" rot="MR270"/>
-<element name="R17" library="rcl" package="R0603" value="270" x="14.75" y="13.25" rot="MR270"/>
-<element name="R18" library="rcl" package="R0603" value="270" x="16.85" y="13.25" rot="MR270"/>
+<element name="IC1" library="v-reg" package="DPACK" value="LD117ADT33TR" x="53.65" y="16.95" smashed="yes">
+<attribute name="NAME" x="58.39" y="17.81" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="58.73" y="14.41" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C19" library="rcl" package="C/6032-28R" value="22u" x="47.2" y="15.25" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.375" y="14.2" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="50.25" y="12.25" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C20" library="rcl" package="C/6032-28R" value="10u" x="53.65" y="8.15" smashed="yes">
+<attribute name="NAME" x="52.5" y="10.025" size="0.8128" layer="25" font="vector"/>
+<attribute name="VALUE" x="50.65" y="5.1" size="1.27" layer="27"/>
+</element>
+<element name="R10" library="rcl" package="R0603" value="270" x="20.95" y="13.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.785" y="14.835" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="19.045" y="13.885" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R11" library="rcl" package="R0603" value="270" x="16.85" y="13.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.585" y="14.985" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="14.945" y="13.885" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R12" library="rcl" package="R0603" value="270" x="14.75" y="13.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="13.185" y="15.135" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="12.845" y="13.885" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R13" library="rcl" package="R0603" value="270" x="10.65" y="13.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="11.335" y="14.985" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="8.745" y="13.885" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R14" library="rcl" package="R0603" value="270" x="8.5" y="13.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.985" y="15.185" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="6.595" y="13.885" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R15" library="rcl" package="R0603" value="270" x="8.5" y="13.25" smashed="yes" rot="MR270">
+<attribute name="NAME" x="7.665" y="14.985" size="0.8128" layer="26" font="vector" rot="MR270"/>
+<attribute name="VALUE" x="10.405" y="13.885" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R16" library="rcl" package="R0603" value="270" x="10.65" y="13.25" smashed="yes" rot="MR270">
+<attribute name="NAME" x="12.265" y="15.185" size="0.8128" layer="26" font="vector" rot="MR270"/>
+<attribute name="VALUE" x="12.555" y="13.885" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R17" library="rcl" package="R0603" value="270" x="14.75" y="13.25" smashed="yes" rot="MR270">
+<attribute name="NAME" x="13.915" y="15.035" size="0.8128" layer="26" font="vector" rot="MR270"/>
+<attribute name="VALUE" x="16.655" y="13.885" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R18" library="rcl" package="R0603" value="270" x="16.85" y="13.25" smashed="yes" rot="MR270">
+<attribute name="NAME" x="18.365" y="15.085" size="0.8128" layer="26" font="vector" rot="MR270"/>
+<attribute name="VALUE" x="18.755" y="13.885" size="1.27" layer="28" rot="MR270"/>
+</element>
 </elements>
 <signals>
 <signal name="OUT1">
@@ -1867,7 +1905,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="20.65" y1="4.3" x2="20.65" y2="5.95" width="0.254" layer="1"/>
 <wire x1="20.57" y1="4.22" x2="20.65" y2="4.3" width="0.254" layer="1"/>
 <wire x1="20.65" y1="5.95" x2="21.3" y2="6.6" width="0.254" layer="1"/>
-<contactref element="SV2" pad="29"/>
+<contactref element="X1" pad="29"/>
 <contactref element="R10" pad="2"/>
 <wire x1="20.95" y1="12.4" x2="21.3" y2="12.35" width="0.254" layer="1"/>
 <wire x1="21.3" y1="10.7" x2="21.3" y2="12.05" width="0.254" layer="1"/>
@@ -1885,7 +1923,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="17" y1="5.65" x2="17.1" y2="5.6" width="0.254" layer="1"/>
 <wire x1="16.5" y1="6.6" x2="16.5" y2="6.35" width="0.254" layer="1"/>
 <wire x1="16.5" y1="6.35" x2="17" y2="5.85" width="0.254" layer="1"/>
-<contactref element="SV2" pad="31"/>
+<contactref element="X1" pad="31"/>
 <contactref element="R11" pad="2"/>
 <wire x1="16.5" y1="12.4" x2="16.5" y2="10.7" width="0.254" layer="1"/>
 <wire x1="16.85" y1="12.4" x2="16.5" y2="12.4" width="0.254" layer="1"/>
@@ -1900,7 +1938,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="15.45" y1="5.65" x2="15.5" y2="5.6" width="0.254" layer="1"/>
 <wire x1="15.45" y1="6.6" x2="15.45" y2="5.65" width="0.254" layer="1"/>
 <wire x1="15.1" y1="6.6" x2="15.45" y2="6.6" width="0.254" layer="1"/>
-<contactref element="SV2" pad="33"/>
+<contactref element="X1" pad="33"/>
 <contactref element="R12" pad="2"/>
 <wire x1="15.1" y1="12.4" x2="15.1" y2="10.7" width="0.254" layer="1"/>
 <wire x1="14.75" y1="12.4" x2="15.1" y2="12.4" width="0.254" layer="1"/>
@@ -1921,7 +1959,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="10.75" y1="5.85" x2="11" y2="5.6" width="0.254" layer="1"/>
 <wire x1="10.75" y1="6" x2="10.75" y2="5.85" width="0.254" layer="1"/>
 <wire x1="10.75" y1="6" x2="10.7" y2="6.1" width="0.254" layer="1"/>
-<contactref element="SV2" pad="35"/>
+<contactref element="X1" pad="35"/>
 <contactref element="R13" pad="2"/>
 <wire x1="10.3" y1="12.4" x2="10.3" y2="10.7" width="0.254" layer="1"/>
 <wire x1="10.65" y1="12.4" x2="10.3" y2="12.4" width="0.254" layer="1"/>
@@ -1937,7 +1975,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="9.25" y1="5.65" x2="10.4" y2="4.5" width="0.254" layer="1"/>
 <wire x1="9.25" y1="6.6" x2="9.25" y2="5.65" width="0.254" layer="1"/>
 <wire x1="8.85" y1="6.6" x2="9.25" y2="6.6" width="0.254" layer="1"/>
-<contactref element="SV2" pad="37"/>
+<contactref element="X1" pad="37"/>
 <contactref element="R14" pad="2"/>
 <wire x1="8.85" y1="12.4" x2="8.85" y2="10.7" width="0.254" layer="1"/>
 <wire x1="8.5" y1="12.4" x2="8.85" y2="12.4" width="0.254" layer="1"/>
@@ -1951,7 +1989,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="8.85" y1="8.65" x2="8.85" y2="10.7" width="0.254" layer="16"/>
 <wire x1="9.15" y1="6.6" x2="9.15" y2="3" width="0.254" layer="16"/>
 <wire x1="8.85" y1="6.6" x2="9.15" y2="6.6" width="0.254" layer="16"/>
-<contactref element="SV2" pad="40"/>
+<contactref element="X1" pad="40"/>
 <contactref element="R15" pad="2"/>
 <wire x1="8.85" y1="12.4" x2="8.85" y2="10.7" width="0.254" layer="16"/>
 <wire x1="8.5" y1="12.4" x2="8.85" y2="12.4" width="0.254" layer="16"/>
@@ -1970,7 +2008,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="10.8" y1="5.55" x2="11.7" y2="4.65" width="0.254" layer="16"/>
 <wire x1="10.8" y1="6.6" x2="10.8" y2="5.55" width="0.254" layer="16"/>
 <wire x1="10.3" y1="6.6" x2="10.8" y2="6.6" width="0.254" layer="16"/>
-<contactref element="SV2" pad="38"/>
+<contactref element="X1" pad="38"/>
 <contactref element="R16" pad="2"/>
 <wire x1="10.3" y1="12.4" x2="10.3" y2="10.7" width="0.254" layer="16"/>
 <wire x1="10.65" y1="12.4" x2="10.3" y2="12.4" width="0.254" layer="16"/>
@@ -1982,7 +2020,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <contactref element="C15" pad="1"/>
 <wire x1="15.1" y1="10.7" x2="15.1" y2="8.65" width="0.254" layer="16"/>
 <wire x1="15.1" y1="8.65" x2="15.1" y2="6.6" width="0.254" layer="16"/>
-<contactref element="SV2" pad="36"/>
+<contactref element="X1" pad="36"/>
 <contactref element="R17" pad="2"/>
 <wire x1="15.1" y1="12.4" x2="15.1" y2="10.7" width="0.254" layer="16"/>
 <wire x1="14.75" y1="12.4" x2="15.1" y2="12.4" width="0.254" layer="16"/>
@@ -2003,7 +2041,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <contactref element="C17" pad="1"/>
 <wire x1="16.5" y1="10.7" x2="16.5" y2="8.65" width="0.254" layer="16"/>
 <wire x1="16.5" y1="8.65" x2="16.5" y2="6.6" width="0.254" layer="16"/>
-<contactref element="SV2" pad="32"/>
+<contactref element="X1" pad="32"/>
 <contactref element="R18" pad="2"/>
 <wire x1="16.5" y1="12.4" x2="16.5" y2="10.7" width="0.254" layer="16"/>
 <wire x1="16.85" y1="12.4" x2="16.5" y2="12.4" width="0.254" layer="16"/>
@@ -2017,34 +2055,34 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 </signal>
 <signal name="IN1">
 <contactref element="R1" pad="1"/>
-<contactref element="SV1" pad="1"/>
+<contactref element="X4" pad="1"/>
 <wire x1="19.6" y1="17.25" x2="19.6" y2="10.7" width="0.254" layer="1"/>
 <wire x1="18.95" y1="17.9" x2="19.6" y2="17.25" width="0.254" layer="1"/>
 <wire x1="18.95" y1="17.9" x2="18.93" y2="17.9" width="0.254" layer="1"/>
 </signal>
 <signal name="IN2">
 <contactref element="R2" pad="1"/>
-<contactref element="SV1" pad="2"/>
+<contactref element="X4" pad="2"/>
 <wire x1="18.2" y1="16.1" x2="18.2" y2="10.7" width="0.254" layer="1"/>
 <wire x1="16.4" y1="17.9" x2="18.2" y2="16.1" width="0.254" layer="1"/>
 <wire x1="16.4" y1="17.9" x2="16.39" y2="17.9" width="0.254" layer="1"/>
 </signal>
 <signal name="IN3">
 <contactref element="R3" pad="1"/>
-<contactref element="SV1" pad="3"/>
+<contactref element="X4" pad="3"/>
 <wire x1="13.4" y1="17.45" x2="13.4" y2="10.7" width="0.254" layer="1"/>
 <wire x1="13.85" y1="17.9" x2="13.4" y2="17.45" width="0.254" layer="1"/>
 </signal>
 <signal name="IN4">
 <contactref element="R4" pad="1"/>
-<contactref element="SV1" pad="4"/>
+<contactref element="X4" pad="4"/>
 <wire x1="12" y1="17.25" x2="12" y2="10.7" width="0.254" layer="1"/>
 <wire x1="11.35" y1="17.9" x2="12" y2="17.25" width="0.254" layer="1"/>
 <wire x1="11.35" y1="17.9" x2="11.31" y2="17.9" width="0.254" layer="1"/>
 </signal>
 <signal name="IN5">
 <contactref element="R5" pad="1"/>
-<contactref element="SV1" pad="5"/>
+<contactref element="X4" pad="5"/>
 <wire x1="8.75" y1="16.35" x2="8.75" y2="17.9" width="0.254" layer="1"/>
 <wire x1="7.2" y1="14.8" x2="8.75" y2="16.35" width="0.254" layer="1"/>
 <wire x1="7.2" y1="11.75" x2="7.2" y2="14.8" width="0.254" layer="1"/>
@@ -2054,7 +2092,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 </signal>
 <signal name="IN6">
 <contactref element="R6" pad="1"/>
-<contactref element="SV3" pad="2"/>
+<contactref element="X3" pad="2"/>
 <wire x1="7.15" y1="14.75" x2="7.15" y2="10.7" width="0.254" layer="16"/>
 <wire x1="8.35" y1="15.95" x2="7.15" y2="14.75" width="0.254" layer="16"/>
 <wire x1="9.3" y1="15.95" x2="8.35" y2="15.95" width="0.254" layer="16"/>
@@ -2065,7 +2103,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 </signal>
 <signal name="IN7">
 <contactref element="R7" pad="1"/>
-<contactref element="SV3" pad="3"/>
+<contactref element="X3" pad="3"/>
 <wire x1="12" y1="16.1" x2="12" y2="10.7" width="0.254" layer="16"/>
 <wire x1="12.6" y1="16.7" x2="12" y2="16.1" width="0.254" layer="16"/>
 <wire x1="12.6" y1="20.05" x2="12.6" y2="16.7" width="0.254" layer="16"/>
@@ -2073,7 +2111,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 </signal>
 <signal name="IN8">
 <contactref element="R8" pad="1"/>
-<contactref element="SV3" pad="4"/>
+<contactref element="X3" pad="4"/>
 <wire x1="13.4" y1="15" x2="13.4" y2="10.7" width="0.254" layer="16"/>
 <wire x1="15.1" y1="16.7" x2="13.4" y2="15" width="0.254" layer="16"/>
 <wire x1="15.1" y1="20.05" x2="15.1" y2="16.7" width="0.254" layer="16"/>
@@ -2082,7 +2120,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 </signal>
 <signal name="IN9">
 <contactref element="R9" pad="1"/>
-<contactref element="SV3" pad="5"/>
+<contactref element="X3" pad="5"/>
 <wire x1="18.2" y1="16.15" x2="18.2" y2="10.7" width="0.254" layer="16"/>
 <wire x1="17.65" y1="16.7" x2="18.2" y2="16.15" width="0.254" layer="16"/>
 <wire x1="17.65" y1="20.05" x2="17.65" y2="16.7" width="0.254" layer="16"/>
@@ -2108,7 +2146,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <contactref element="C15" pad="2"/>
 <contactref element="C18" pad="2"/>
 <contactref element="C17" pad="2"/>
-<contactref element="SV3" pad="1"/>
+<contactref element="X3" pad="1"/>
 <wire x1="12" y1="8.65" x2="13.4" y2="8.65" width="0.508" layer="1"/>
 <wire x1="13.45" y1="8.4" x2="13.45" y2="6.6" width="0.508" layer="1"/>
 <wire x1="13.45" y1="8.4" x2="13.4" y2="8.65" width="0.508" layer="1"/>
@@ -2141,7 +2179,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="11.95" y1="3" x2="11.7" y2="2.75" width="0.254" layer="1"/>
 <wire x1="14" y1="3" x2="11.95" y2="3" width="0.254" layer="1"/>
 <wire x1="14.25" y1="3.25" x2="14" y2="3" width="0.254" layer="1"/>
-<contactref element="SV4" pad="1"/>
+<contactref element="X2" pad="1"/>
 <wire x1="10.95" y1="3" x2="9.9" y2="3" width="0.254" layer="1"/>
 <wire x1="11.15" y1="2.8" x2="10.95" y2="3" width="0.254" layer="1"/>
 <wire x1="11.6" y1="2.8" x2="11.15" y2="2.8" width="0.254" layer="1"/>
@@ -2166,14 +2204,14 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <vertex x="64" y="24"/>
 <vertex x="0" y="24"/>
 </polygon>
-<contactref element="SV2" pad="30"/>
-<contactref element="SV2" pad="34"/>
-<contactref element="SV2" pad="39"/>
-<contactref element="SV2" pad="20"/>
-<contactref element="SV2" pad="25"/>
-<contactref element="SV2" pad="14"/>
-<contactref element="SV2" pad="9"/>
-<contactref element="SV2" pad="6"/>
+<contactref element="X1" pad="30"/>
+<contactref element="X1" pad="34"/>
+<contactref element="X1" pad="39"/>
+<contactref element="X1" pad="20"/>
+<contactref element="X1" pad="25"/>
+<contactref element="X1" pad="14"/>
+<contactref element="X1" pad="9"/>
+<contactref element="X1" pad="6"/>
 <contactref element="C19" pad="-"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="C20" pad="-"/>
@@ -2273,7 +2311,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="14.25" y1="5.75" x2="13.4" y2="6.6" width="0.254" layer="16"/>
 </signal>
 <signal name="VCC" class="1">
-<contactref element="SV2" pad="17"/>
+<contactref element="X1" pad="17"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R11" pad="1"/>
 <contactref element="R12" pad="1"/>
@@ -2325,8 +2363,8 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="21.05" y1="14.2" x2="20.95" y2="14.1" width="0.254" layer="1"/>
 </signal>
 <signal name="MOSI">
-<contactref element="SV4" pad="6"/>
-<contactref element="SV2" pad="19"/>
+<contactref element="X2" pad="6"/>
+<contactref element="X1" pad="19"/>
 <wire x1="40.4" y1="13.65" x2="39.12" y2="14.93" width="0.254" layer="1"/>
 <wire x1="40.4" y1="12.05" x2="40.4" y2="13.65" width="0.254" layer="1"/>
 <wire x1="39.45" y1="11.1" x2="40.4" y2="12.05" width="0.254" layer="1"/>
@@ -2339,8 +2377,8 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="33.25" y1="4.25" x2="33.27" y2="4.22" width="0.254" layer="1"/>
 </signal>
 <signal name="MISO">
-<contactref element="SV4" pad="7"/>
-<contactref element="SV2" pad="21"/>
+<contactref element="X2" pad="7"/>
+<contactref element="X1" pad="21"/>
 <wire x1="30" y1="4.95" x2="30.73" y2="4.22" width="0.254" layer="1"/>
 <wire x1="30" y1="6.85" x2="30" y2="4.95" width="0.254" layer="1"/>
 <wire x1="35.55" y1="12.4" x2="30" y2="6.85" width="0.254" layer="1"/>
@@ -2348,15 +2386,15 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="36.55" y1="12.4" x2="36.58" y2="12.39" width="0.254" layer="1"/>
 </signal>
 <signal name="SCK">
-<contactref element="SV4" pad="5"/>
-<contactref element="SV2" pad="23"/>
+<contactref element="X2" pad="5"/>
+<contactref element="X1" pad="23"/>
 <wire x1="28.2" y1="6.55" x2="36.58" y2="14.93" width="0.254" layer="1"/>
 <wire x1="28.2" y1="4.25" x2="28.2" y2="6.55" width="0.254" layer="1"/>
 <wire x1="28.2" y1="4.25" x2="28.19" y2="4.22" width="0.254" layer="1"/>
 </signal>
 <signal name="RST">
-<contactref element="SV4" pad="3"/>
-<contactref element="SV2" pad="18"/>
+<contactref element="X2" pad="3"/>
+<contactref element="X1" pad="18"/>
 <wire x1="37.85" y1="16.2" x2="36.58" y2="17.47" width="0.254" layer="16"/>
 <wire x1="37.85" y1="6.2" x2="37.85" y2="16.2" width="0.254" layer="16"/>
 <wire x1="37.1" y1="5.45" x2="37.85" y2="6.2" width="0.254" layer="1"/>
@@ -2366,8 +2404,8 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <via x="37.85" y="6.2" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="CSN">
-<contactref element="SV4" pad="4"/>
-<contactref element="SV2" pad="24"/>
+<contactref element="X2" pad="4"/>
+<contactref element="X1" pad="24"/>
 <wire x1="37.85" y1="16.2" x2="39.12" y2="17.47" width="0.254" layer="1"/>
 <wire x1="37.85" y1="14.55" x2="37.85" y2="16.2" width="0.254" layer="1"/>
 <wire x1="36.95" y1="13.65" x2="37.85" y2="14.55" width="0.254" layer="1"/>
@@ -2380,8 +2418,8 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="28.2" y1="1.7" x2="28.19" y2="1.68" width="0.254" layer="1"/>
 </signal>
 <signal name="IRQ">
-<contactref element="SV4" pad="8"/>
-<contactref element="SV2" pad="22"/>
+<contactref element="X2" pad="8"/>
+<contactref element="X1" pad="22"/>
 <wire x1="37.85" y1="11.1" x2="39.1" y2="12.35" width="0.254" layer="1"/>
 <wire x1="35" y1="11.1" x2="37.85" y2="11.1" width="0.254" layer="1"/>
 <wire x1="32" y1="8.1" x2="35" y2="11.1" width="0.254" layer="1"/>
@@ -2390,8 +2428,8 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="39.1" y1="12.35" x2="39.12" y2="12.39" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1" class="1">
-<contactref element="SV2" pad="4"/>
-<contactref element="SV2" pad="2"/>
+<contactref element="X1" pad="4"/>
+<contactref element="X1" pad="2"/>
 <contactref element="IC1" pad="3"/>
 <contactref element="C20" pad="+"/>
 <wire x1="53.6" y1="1.7" x2="56.1" y2="1.7" width="0.8128" layer="1"/>
@@ -2409,7 +2447,7 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="56.05" y1="8.55" x2="56.175" y2="8.15" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$2" class="1">
-<contactref element="SV4" pad="2"/>
+<contactref element="X2" pad="2"/>
 <contactref element="C19" pad="+"/>
 <contactref element="IC1" pad="4"/>
 <wire x1="47.2" y1="18.65" x2="47.2" y2="17.775" width="0.8128" layer="1"/>
