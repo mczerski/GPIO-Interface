@@ -62,6 +62,7 @@
 <wire x1="0" y1="24" x2="0" y2="-0.5" width="0" layer="20"/>
 <hole x="3" y="3" drill="3"/>
 <hole x="61" y="3" drill="3"/>
+<text x="24.15" y="22.2" size="1.016" layer="25" font="vector">RPI GPIO Interface v2.0</text>
 </plain>
 <libraries>
 <library name="con-lstb">
